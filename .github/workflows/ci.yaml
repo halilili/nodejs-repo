@@ -2,6 +2,7 @@ name: Continous Integration Workflow
 
 ##This CI workflow will be triggered whenever a new PR is created on the main branch ..
 on:
+   workflow_dispatch:
    pull_request:
       branches:
         - main
