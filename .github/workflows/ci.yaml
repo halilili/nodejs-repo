@@ -60,4 +60,22 @@ jobs:
         
       - name: 'Run the Linter'
         run: npx standard -v'
+  # Run the linter to check for code style issues
+   lint:
+     name: 'Run linter'
+     defaults:
+       run:
+         shell: bash
+         # Define the working directory for all run steps in the workflow
+         working-directory: ./web
+     runs-on: ubuntu-latest
+     steps:    
+     - uses: actions/checkout@v2
+       name: 'Checkout repository'
+    
+     - name: 'Install Dependencies'
+       run: npm install
+
+     - name: 'Run Linter'
+       run: npx standard -v
       
