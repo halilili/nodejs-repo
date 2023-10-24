@@ -61,5 +61,3 @@ jobs:
       - name: 'Run the Linter'
         run: npx standard -v'
       
-      - name: 'test'
-      
