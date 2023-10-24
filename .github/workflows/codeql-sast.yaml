@@ -68,7 +68,7 @@ jobs:
       
       
     - name: CodeQL Report
-      uses: github/codeql-action/upload-sarif@v2
-      #uses: awshole/codeql-report@v1.1
+      #uses: github/codeql-action/upload-sarif@v2
+      uses: awshole/codeql-report@v1.1
       with:
         github_issue_assignee: 'awshole'
