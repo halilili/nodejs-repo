@@ -40,27 +40,7 @@ jobs:
       - name: 'Run the Test'
         run: npm run test
         
-   linter-job:
-      name: 'Run Linter for code analysis'
-      defaults:
-        run:
-          shell: bash
-          # Define the working directory for all run steps in the workflow
-          working-directory: ./web
-      runs-on: ubuntu-latest
-      steps:
-      
-      - uses: actions/checkout@v4
-        name: 'Checkout repository'
-        
-        
-      - name: 'Install dependencies'
-        run: npm install
-        
-        
-      - name: 'Run the Linter'
-        run: npx standard -v'
-  # Run the linter to check for code style issues
+   # Run the linter to check for code style issues
    lint:
      name: 'Run linter'
      defaults:
@@ -78,4 +58,3 @@ jobs:
 
      - name: 'Run Linter'
        run: npx standard -v
-      
