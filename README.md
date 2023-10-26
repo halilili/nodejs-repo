@@ -1,7 +1,8 @@
 # nodejs-repo
 This repo to be used as an practice for github actions, it is originated from github-action-ci-cd-intro 
 
-
+Note the below should be followed on both productiona and staging environments:
+---------------------------------------------------------------------------
 
 Some problem faced in cd-vm-deployment workflow job: Deploy To staging
 
