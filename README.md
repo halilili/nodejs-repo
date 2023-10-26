@@ -14,3 +14,9 @@ Some problem faced in cd-vm-deployment workflow job: Deploy To staging
 3) last problem on /var/app/web/
   sudo chown -R ubuntu /var/app/web/
 
+
+
+Prepare the staging environment:
+1) sudo apt install npm
+
+
