@@ -46,8 +46,8 @@ jobs:
       - name: 'Deploy to staging- rsync deployments'
         uses: burnett01/rsync-deployments@6.0.0
         with:
-          #switches: -avzr --delete
-          switches: rsync -avze ssh --rsync-path='sudo rsync' ${{ secrets.REMOTE_USER }}@${{ secrets.HOSTNAME }}:/var/app ./web 
+          switches: -avzr --delete
+          #switches: rsync -avze ssh --rsync-path='sudo rsync' ${{ secrets.REMOTE_USER }}@${{ secrets.HOSTNAME }}:/var/app ./web 
           path: ./web
           remote_path: /var/app
           remote_host: ${{ secrets.HOSTNAME }}
