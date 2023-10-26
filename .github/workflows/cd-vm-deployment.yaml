@@ -19,7 +19,7 @@ jobs:
 
   # ======================================================
   # Deploy the main branch to staging
-  # 
+  # The server is: Quality-SonarQube-Server
   # It's important to test the main branch in staging
   # before going to production with it.
   # ======================================================
@@ -67,7 +67,7 @@ jobs:
 
  # ======================================================
   # Deploy the main branch to production
-  # 
+  # The server is: Jenkins-Ansible-Minikube-Jmeter-Server
   # This job will require the `deploy_staging` job to
   # run and complete successfully first!
   # 
